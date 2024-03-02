@@ -1,6 +1,5 @@
 public class Talkative implements Runnable{
     private int attr;
-
     public Talkative(int attr) {
         this.attr = attr;
     }
