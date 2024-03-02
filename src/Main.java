@@ -1,3 +1,6 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class Main {
     public static void main(String[] args) {
         Talkative t1 = new Talkative(1);
@@ -21,5 +24,14 @@ public class Main {
         new Thread(t8).start();
         new Thread(t9).start();
         new Thread(t10).start();
+
+        // création d'un pool de thread afin d'optimiser l'utilisation des thread
+        ExecutorService service = Executors.newFixedThreadPool(2); //creation de deux threads
+
+        for (int i = 0; i<101; i++){
+            Talkative tache = new Talkative(i+11);
+            service.submit(tache);
+        }
+        service.shutdown();
     }
 }
