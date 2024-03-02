@@ -11,4 +11,7 @@
 <h2>Exercice 2</h2>
 1- Création de la class Sommeur qui implement l'interface Runnable <br>
 <img src="assets/exo2/1.png" alt="">
-2- 
+2- creation du tableau de la class main <br>
+<img src="assets/exo2/2.png" alt="">
+3- Calculé la somme du tableau par un pool de thread <br>
+<img src="assets/exo2/3.png" alt="">

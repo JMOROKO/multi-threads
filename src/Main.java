@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -25,13 +26,25 @@ public class Main {
         new Thread(t9).start();
         new Thread(t10).start();
 
-        // création d'un pool de thread afin d'optimiser l'utilisation des thread
-        ExecutorService service = Executors.newFixedThreadPool(2); //creation de deux threads
 
-        for (int i = 0; i<101; i++){
-            Talkative tache = new Talkative(i+11);
-            service.submit(tache);
+
+        int[] tab = new int[10];
+        tab[0] = 10;
+        tab[1] = 5;
+        tab[2] = 12;
+        tab[3] = 4;
+        tab[4] = 12;
+        tab[5] = 10;
+        tab[6] = 11;
+        tab[7] = 100;
+        tab[8] = 10;
+        tab[9] = 101;
+        // création d'un pool de thread afin d'optimiser l'utilisation des thread
+        ExecutorService serviceThreadPool = Executors.newFixedThreadPool(2); //creation de deux threads
+        for (int i = 0; i<4; i++){
+            Sommeur sommeur = new Sommeur(tab,0+i, i+5);
+            serviceThreadPool.submit(sommeur);
         }
-        service.shutdown();
+        serviceThreadPool.shutdown();
     }
 }
