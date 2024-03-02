@@ -4,7 +4,7 @@ import java.util.concurrent.Executors;
 
 public class Main {
     public static void main(String[] args) {
-        Talkative t1 = new Talkative(1);
+        /*Talkative t1 = new Talkative(1);
         Talkative t2 = new Talkative(2);
         Talkative t3 = new Talkative(3);
         Talkative t4 = new Talkative(4);
@@ -24,7 +24,7 @@ public class Main {
         new Thread(t7).start();
         new Thread(t8).start();
         new Thread(t9).start();
-        new Thread(t10).start();
+        new Thread(t10).start();*/
 
 
 
