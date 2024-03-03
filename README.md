@@ -13,7 +13,7 @@
 <img src="assets/exo2/1.png" alt="">
 2- creation du tableau de la class main <br>
 <img src="assets/exo2/2.png" alt="">
-3- Calculé la somme du tableau par un pool de thread <br>
+3- Calculer la somme du tableau par un pool de thread <br>
 <img src="assets/exo2/3.png" alt="">
 4- résultat
 <img src="assets/exo2/4.png" alt="">
